@@ -56,7 +56,7 @@ NAMES = ['Goh Feng Yi Justin', #S1
          'Faaiz Ashraf', 
          'Samson Wong Bing Cheng']
 QM_CODE = "Soote Flap   "
-EMAIL_ID = "spsge.loans@hotmail.com"
-EMAIL_PASSWORD = "BAtARgLaxwOrNEQ"
+EMAIL_ID = "spsge.loans@gmail.com"
+EMAIL_PASSWORD = "wgvy snyh ltpn ogpu"
 SMTP_SERVER = "smtp.gmail.com"
 SMTP_PORT = 587
