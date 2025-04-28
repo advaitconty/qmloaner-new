@@ -17,6 +17,26 @@
     - Selecting an available guitar
     - Getting a PDF that you can sign and give on collection of the guitar (with handling directions as a bonus through Google Gemini!)
 
+## Running this locally
+**Apple Sillicon Macs:**
+```bash
+pip3 install $(grep -v 'reportlab' requirements.txt)
+python3 main.py
+git clone https://github.com/Distrotech/reportlab.git
+cd reportlab
+pip3 install -r requirements.txt
+python3 setup.py build_ext --inplace
+pip install .
+cd ..
+rm -rf reportlab/
+```
+
+**Everything else:**
+```bash
+pip3 install -r requirements.txt
+python3 main.py
+```
+
 ## Screenshots
 ![Loan table](https://cloud-7r6fpad9m-hack-club-bot.vercel.app/0loan_table.png)
 
