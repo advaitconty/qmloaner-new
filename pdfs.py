@@ -10,6 +10,7 @@ from reportlab.platypus import Paragraph
 from pypdf import PdfMerger
 from emails import send_email
 import re
+import time
 
 
 # QM code: 35609e13ba03bc216f3106b680b368840c71746b074df7e32a9706f13d0e110a
