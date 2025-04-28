@@ -4,11 +4,7 @@ import traceback
 from datetime import datetime
 import re
 import pdfs
-<<<<<<< HEAD
 import secret
-=======
-import secret as secrets
->>>>>>> 14a4fa61e99d0115735f85fea589154cce005f8c
 from prettytable import PrettyTable
 import colorama
 import emails
@@ -469,4 +465,4 @@ def qm_mode(username, password):
 
 
 if __name__ == "__main__":
-    qm_mode("advaitconty", "SooteFlap")
+    print(login("ryanlim", "Soote"))

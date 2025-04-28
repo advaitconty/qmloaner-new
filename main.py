@@ -52,7 +52,7 @@ def login_page():
         if userID == "q":
             print("Exiting...")
             exit(0)
-        password = input("Please enter your password: ")
+        password = getpass("Please enter your password: ")
         result = mongodb.login(userID, password)
         if result:
             print("Login successful!")

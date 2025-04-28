@@ -1,0 +1,184 @@
+bad auth : Authentication failed., full error: {'ok': 0, 'errmsg': 'bad auth : Authentication failed.', 'code': 8000, 'codeName': 'AtlasError'}
+Traceback (most recent call last):
+  File "D:\Python\QMLoaner\mongodb.py", line 186, in login
+    client.admin.command('ping')
+  File "C:\Users\Advait\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pymongo\_csot.py", line 108, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Advait\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pymongo\database.py", line 893, in command
+    with self.__client._conn_for_reads(read_preference, session, operation=command_name) as (
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\Advait\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pymongo\mongo_client.py", line 1351, in _conn_from_server
+    with self._checkout(server, session) as conn:
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\Advait\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pymongo\mongo_client.py", line 1260, in _checkout
+    with server.checkout(handler=err_handler) as conn:
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\Advait\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pymongo\pool.py", line 1763, in checkout
+    conn = self._get_conn(checkout_started_time, handler=handler)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Advait\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pymongo\pool.py", line 1921, in _get_conn
+    conn = self.connect(handler=handler)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Advait\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pymongo\pool.py", line 1725, in connect
+    conn.authenticate()
+  File "C:\Users\Advait\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pymongo\pool.py", line 1098, in authenticate
+    auth.authenticate(creds, self, reauthenticate=reauthenticate)
+  File "C:\Users\Advait\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pymongo\auth.py", line 656, in authenticate
+    auth_func(credentials, conn)
+  File "C:\Users\Advait\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pymongo\auth.py", line 560, in _authenticate_default
+    return _authenticate_scram(credentials, conn, "SCRAM-SHA-1")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Advait\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pymongo\auth.py", line 299, in _authenticate_scram
+    res = conn.command(source, cmd)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Advait\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pymongo\helpers.py", line 342, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Advait\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pymongo\pool.py", line 988, in command
+    return command(
+           ^^^^^^^^
+  File "C:\Users\Advait\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pymongo\network.py", line 212, in command
+    helpers._check_command_response(
+  File "C:\Users\Advait\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pymongo\helpers.py", line 248, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: bad auth : Authentication failed., full error: {'ok': 0, 'errmsg': 'bad auth : Authentication failed.', 'code': 8000, 'codeName': 'AtlasError'}
+bad auth : Authentication failed., full error: {'ok': 0, 'errmsg': 'bad auth : Authentication failed.', 'code': 8000, 'codeName': 'AtlasError'}
+Traceback (most recent call last):
+  File "D:\Python\QMLoaner\mongodb.py", line 186, in login
+    client.admin.command('ping')
+  File "C:\Users\Advait\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pymongo\_csot.py", line 108, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Advait\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pymongo\database.py", line 893, in command
+    with self.__client._conn_for_reads(read_preference, session, operation=command_name) as (
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\Advait\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pymongo\mongo_client.py", line 1351, in _conn_from_server
+    with self._checkout(server, session) as conn:
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\Advait\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pymongo\mongo_client.py", line 1260, in _checkout
+    with server.checkout(handler=err_handler) as conn:
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\Advait\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pymongo\pool.py", line 1763, in checkout
+    conn = self._get_conn(checkout_started_time, handler=handler)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Advait\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pymongo\pool.py", line 1921, in _get_conn
+    conn = self.connect(handler=handler)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Advait\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pymongo\pool.py", line 1725, in connect
+    conn.authenticate()
+  File "C:\Users\Advait\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pymongo\pool.py", line 1098, in authenticate
+    auth.authenticate(creds, self, reauthenticate=reauthenticate)
+  File "C:\Users\Advait\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pymongo\auth.py", line 656, in authenticate
+    auth_func(credentials, conn)
+  File "C:\Users\Advait\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pymongo\auth.py", line 560, in _authenticate_default
+    return _authenticate_scram(credentials, conn, "SCRAM-SHA-1")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Advait\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pymongo\auth.py", line 299, in _authenticate_scram
+    res = conn.command(source, cmd)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Advait\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pymongo\helpers.py", line 342, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Advait\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pymongo\pool.py", line 988, in command
+    return command(
+           ^^^^^^^^
+  File "C:\Users\Advait\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pymongo\network.py", line 212, in command
+    helpers._check_command_response(
+  File "C:\Users\Advait\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pymongo\helpers.py", line 248, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: bad auth : Authentication failed., full error: {'ok': 0, 'errmsg': 'bad auth : Authentication failed.', 'code': 8000, 'codeName': 'AtlasError'}
+bad auth : Authentication failed., full error: {'ok': 0, 'errmsg': 'bad auth : Authentication failed.', 'code': 8000, 'codeName': 'AtlasError'}
+Traceback (most recent call last):
+  File "d:\Python\QMLoaner\mongodb.py", line 186, in login
+    client.admin.command('ping')
+  File "C:\Users\Advait\AppData\Local\Programs\Python\Python39\lib\site-packages\pymongo\_csot.py", line 108, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\Advait\AppData\Local\Programs\Python\Python39\lib\site-packages\pymongo\database.py", line 893, in command
+    with self.__client._conn_for_reads(read_preference, session, operation=command_name) as (
+  File "C:\Users\Advait\AppData\Local\Programs\Python\Python39\lib\contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "C:\Users\Advait\AppData\Local\Programs\Python\Python39\lib\site-packages\pymongo\mongo_client.py", line 1351, in _conn_from_server
+    with self._checkout(server, session) as conn:
+  File "C:\Users\Advait\AppData\Local\Programs\Python\Python39\lib\contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "C:\Users\Advait\AppData\Local\Programs\Python\Python39\lib\site-packages\pymongo\mongo_client.py", line 1260, in _checkout
+    with server.checkout(handler=err_handler) as conn:
+  File "C:\Users\Advait\AppData\Local\Programs\Python\Python39\lib\contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "C:\Users\Advait\AppData\Local\Programs\Python\Python39\lib\site-packages\pymongo\pool.py", line 1763, in checkout
+    conn = self._get_conn(checkout_started_time, handler=handler)
+  File "C:\Users\Advait\AppData\Local\Programs\Python\Python39\lib\site-packages\pymongo\pool.py", line 1921, in _get_conn
+    conn = self.connect(handler=handler)
+  File "C:\Users\Advait\AppData\Local\Programs\Python\Python39\lib\site-packages\pymongo\pool.py", line 1725, in connect
+    conn.authenticate()
+  File "C:\Users\Advait\AppData\Local\Programs\Python\Python39\lib\site-packages\pymongo\pool.py", line 1098, in authenticate
+    auth.authenticate(creds, self, reauthenticate=reauthenticate)
+  File "C:\Users\Advait\AppData\Local\Programs\Python\Python39\lib\site-packages\pymongo\auth.py", line 656, in authenticate
+    auth_func(credentials, conn)
+  File "C:\Users\Advait\AppData\Local\Programs\Python\Python39\lib\site-packages\pymongo\auth.py", line 560, in _authenticate_default
+    return _authenticate_scram(credentials, conn, "SCRAM-SHA-1")
+  File "C:\Users\Advait\AppData\Local\Programs\Python\Python39\lib\site-packages\pymongo\auth.py", line 299, in _authenticate_scram
+    res = conn.command(source, cmd)
+  File "C:\Users\Advait\AppData\Local\Programs\Python\Python39\lib\site-packages\pymongo\helpers.py", line 342, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\Advait\AppData\Local\Programs\Python\Python39\lib\site-packages\pymongo\pool.py", line 988, in command
+    return command(
+  File "C:\Users\Advait\AppData\Local\Programs\Python\Python39\lib\site-packages\pymongo\network.py", line 212, in command
+    helpers._check_command_response(
+  File "C:\Users\Advait\AppData\Local\Programs\Python\Python39\lib\site-packages\pymongo\helpers.py", line 248, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: bad auth : Authentication failed., full error: {'ok': 0, 'errmsg': 'bad auth : Authentication failed.', 'code': 8000, 'codeName': 'AtlasError'}
+bad auth : Authentication failed., full error: {'ok': 0, 'errmsg': 'bad auth : Authentication failed.', 'code': 8000, 'codeName': 'AtlasError'}
+Traceback (most recent call last):
+  File "d:\Python\QMLoaner\mongodb.py", line 186, in login
+    client.admin.command('ping')
+  File "C:\Users\Advait\AppData\Local\Programs\Python\Python39\lib\site-packages\pymongo\_csot.py", line 108, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\Advait\AppData\Local\Programs\Python\Python39\lib\site-packages\pymongo\database.py", line 893, in command
+    with self.__client._conn_for_reads(read_preference, session, operation=command_name) as (
+  File "C:\Users\Advait\AppData\Local\Programs\Python\Python39\lib\contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "C:\Users\Advait\AppData\Local\Programs\Python\Python39\lib\site-packages\pymongo\mongo_client.py", line 1351, in _conn_from_server
+    with self._checkout(server, session) as conn:
+  File "C:\Users\Advait\AppData\Local\Programs\Python\Python39\lib\contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "C:\Users\Advait\AppData\Local\Programs\Python\Python39\lib\site-packages\pymongo\mongo_client.py", line 1260, in _checkout
+    with server.checkout(handler=err_handler) as conn:
+  File "C:\Users\Advait\AppData\Local\Programs\Python\Python39\lib\contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "C:\Users\Advait\AppData\Local\Programs\Python\Python39\lib\site-packages\pymongo\pool.py", line 1763, in checkout
+    conn = self._get_conn(checkout_started_time, handler=handler)
+  File "C:\Users\Advait\AppData\Local\Programs\Python\Python39\lib\site-packages\pymongo\pool.py", line 1921, in _get_conn
+    conn = self.connect(handler=handler)
+  File "C:\Users\Advait\AppData\Local\Programs\Python\Python39\lib\site-packages\pymongo\pool.py", line 1725, in connect
+    conn.authenticate()
+  File "C:\Users\Advait\AppData\Local\Programs\Python\Python39\lib\site-packages\pymongo\pool.py", line 1098, in authenticate
+    auth.authenticate(creds, self, reauthenticate=reauthenticate)
+  File "C:\Users\Advait\AppData\Local\Programs\Python\Python39\lib\site-packages\pymongo\auth.py", line 656, in authenticate
+    auth_func(credentials, conn)
+  File "C:\Users\Advait\AppData\Local\Programs\Python\Python39\lib\site-packages\pymongo\auth.py", line 560, in _authenticate_default
+    return _authenticate_scram(credentials, conn, "SCRAM-SHA-1")
+  File "C:\Users\Advait\AppData\Local\Programs\Python\Python39\lib\site-packages\pymongo\auth.py", line 299, in _authenticate_scram
+    res = conn.command(source, cmd)
+  File "C:\Users\Advait\AppData\Local\Programs\Python\Python39\lib\site-packages\pymongo\helpers.py", line 342, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\Advait\AppData\Local\Programs\Python\Python39\lib\site-packages\pymongo\pool.py", line 988, in command
+    return command(
+  File "C:\Users\Advait\AppData\Local\Programs\Python\Python39\lib\site-packages\pymongo\network.py", line 212, in command
+    helpers._check_command_response(
+  File "C:\Users\Advait\AppData\Local\Programs\Python\Python39\lib\site-packages\pymongo\helpers.py", line 248, in _check_command_response
+    raise OperationFailure(errmsg, code, response, max_wire_version)
+pymongo.errors.OperationFailure: bad auth : Authentication failed., full error: {'ok': 0, 'errmsg': 'bad auth : Authentication failed.', 'code': 8000, 'codeName': 'AtlasError'}
