@@ -5,11 +5,8 @@ from getpass import getpass
 import mongodb
 from pdfs import create_loa_pdf, create_loan_pdf
 import secret as secrets
-<<<<<<< HEAD
 import csv
 from prettytable import PrettyTable
-=======
->>>>>>> 14a4fa61e99d0115735f85fea589154cce005f8c
 
 username = ""
 password = ""

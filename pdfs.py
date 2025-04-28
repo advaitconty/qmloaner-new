@@ -3,11 +3,6 @@ from reportlab.pdfgen.canvas import Canvas
 from reportlab.lib.pagesizes import LETTER
 from reportlab.lib.units import inch
 from reportlab.lib.utils import ImageReader
-<<<<<<< HEAD
-import time
-=======
-
->>>>>>> 14a4fa61e99d0115735f85fea589154cce005f8c
 import secret as secrets
 from gemini import generate_gemini_response
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
