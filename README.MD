@@ -20,8 +20,9 @@
 ## Running this locally
 **Apple Sillicon Macs:**
 ```bash
+git clone https://github.com/advaitconty/qmloaner-new
+cd qmloaner-new/
 pip3 install $(grep -v 'reportlab' requirements.txt)
-python3 main.py
 git clone https://github.com/Distrotech/reportlab.git
 cd reportlab
 pip3 install -r requirements.txt
@@ -33,6 +34,8 @@ rm -rf reportlab/
 
 **Everything else:**
 ```bash
+git clone https://github.com/advaitconty/qmloaner-new
+cd qmloaner-new/
 pip3 install -r requirements.txt
 python3 main.py
 ```
