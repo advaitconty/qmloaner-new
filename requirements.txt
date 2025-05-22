@@ -4,3 +4,4 @@ reportlab~=3.6.8
 pypdf~=4.2.0
 pandas~=2.2.2
 prettytable~=3.10.0
+anthropic

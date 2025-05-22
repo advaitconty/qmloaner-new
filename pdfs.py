@@ -4,7 +4,7 @@ from reportlab.lib.pagesizes import LETTER
 from reportlab.lib.units import inch
 from reportlab.lib.utils import ImageReader
 import secret as secrets
-from gemini import generate_gemini_response
+from claude import generate_gemini_response
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.platypus import Paragraph
 from pypdf import PdfMerger
