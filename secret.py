@@ -7,6 +7,7 @@ def mongo_host_connection(username, password, default=False):
 
 
 GEMINI_API_KEY = "AIzaSyB9w7GXKfW57dA_pq6myEZT1OYdhzJ0gtM"
+ANTHROPIC_API_KEY = "your-anthropic-api-key"
 # ATTENDANCE_EMAILS = ["elias_wong_yi_hang@students.edu.sg",
 #                      "chen_li_yan@moe.edu.sg",
 #                      "faith_ang_si_ying@moe.edu.sg",
