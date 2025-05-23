@@ -2,7 +2,7 @@ import anthropic
 
 def generate_gemini_response(prompt):
     # try:
-    client = anthropic.Anthropic(api_key="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")
+    client = anthropic.Anthropic(api_key="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")
 
     # Generated through a bit of testing with RP with Gemini
     default_prompt = (
